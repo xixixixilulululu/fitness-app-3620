@@ -5,7 +5,7 @@
 | Area | Owner |
 |---|---|
 | Home Screen | Nikko |
-| Fitness Plan Selection, trainer plans, and music | Lu |
+| Fitness Plan Selection, trainer plans, and music | Tianrui Liu |
 | Motivation and Rewards | Jimena |
 | Remaining role or integration support | Ryan — confirm with the team |
 
@@ -18,7 +18,7 @@ Do not build features directly on main.
 Recommended branches:
 
 - Nikko: feature/home-nikko
-- Lu: feature/plan-lu
+- Tianrui Liu: feature/plan-tianrui
 - Jimena: feature/rewards-jimena
 - Ryan: feature/confirmed-area-ryan
 - If Ryan handles integration: feature/integration-ryan
