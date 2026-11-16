@@ -49,7 +49,7 @@ Secondary screens use a back button instead of adding more bottom-navigation ite
 | Area | Owner | Scope |
 |---|---|---|
 | Home Screen | Nikko | Active plan, today's workout, and progress summary |
-| Fitness Plan Selection | Lu | Plan builder, recommendations, trainer plans, and workout music |
+| Fitness Plan Selection | Tianrui Liu | Plan builder, recommendations, trainer plans, and workout music |
 | Motivation and Rewards | Jimena | Points, streaks, badges, and milestones |
 | Additional role / integration | Ryan | To be confirmed with the team |
 
