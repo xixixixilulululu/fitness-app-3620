@@ -7,7 +7,7 @@ The app has two viable visual directions:
 - **Plan A — Fresh Motion:** organic, energetic, and slightly more athletic.
 - **Plan B — Airy Active:** bright, modern, and similar to current mainstream fitness and wellness apps.
 
-**Recommendation: Airy Active.** It matches the preferred light interface, keeps every screen easy to combine, and is straightforward to build with Java, XML, and Material Components.
+**Current preview only: Fresh Motion.** It keeps the preferred light interface while giving the project a more distinctive fitness identity, but it has not been approved by the team. Airy Active remains Plan B and can be applied by changing shared color resources rather than rebuilding the feature flows.
 
 ## Plan B — Airy Active
 
@@ -50,7 +50,7 @@ Use blue for buttons, active navigation, progress, links, and selected borders. 
 | Primary text | Deep charcoal green | #172019 |
 | Secondary text | Muted green-gray | #68746B |
 
-Fresh Motion feels more athletic and distinctive. Keep the background light and use forest green for navigation, headings, and primary actions—not as a full-page background.
+Fresh Motion is the current temporary preview, pending team confirmation. It must not be presented as the final design direction. Keep the background light and use forest green for navigation, headings, and primary actions—not as a full-page background.
 
 ## Typography
 
@@ -159,7 +159,7 @@ Trainer plans are a definite feature. Each card includes a sample trainer, goal,
 
 ### Workout Music
 
-Use three to five local tracks or playlists with name, BPM, recommended intensity, play/pause control, and a clear playing state. Airy Active can use mint music cards; do not switch to an unrelated dark player.
+Use three to five local tracks or playlists with name, BPM, recommended intensity, play/pause control, and a clear playing state. Fresh Motion uses pale mint music cards; do not switch to an unrelated dark player.
 
 ### Rewards
 

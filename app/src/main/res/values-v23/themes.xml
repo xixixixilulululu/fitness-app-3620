@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FitnessApp3620" parent="Theme.FitnessApp3620.Base">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

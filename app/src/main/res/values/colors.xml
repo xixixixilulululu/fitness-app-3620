@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fresh Motion is the current preview only. All colors stay semantic so the
+         team can choose Fresh Motion or Airy Active without rewriting layouts. -->
+    <color name="color_app_background">#F4F7F1</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_primary">#193E2B</color>
+    <color name="color_primary_dark">#10291D</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_selection">#E6F0D7</color>
+    <color name="color_mint">#DFF2E5</color>
+    <color name="color_coral">#FFB08B</color>
+    <color name="color_reward">#F5E9A9</color>
+    <color name="color_text_primary">#172019</color>
+    <color name="color_text_secondary">#68746B</color>
+    <color name="color_border">#D5DED3</color>
+    <color name="color_disabled_background">#D7DED6</color>
+    <color name="color_disabled_content">#8A948C</color>
+</resources>

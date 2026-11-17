@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fitness App 3620</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_my_plan">My Plan</string>
+    <string name="nav_rewards">Rewards</string>
+
+    <string name="home_title">Today</string>
+    <string name="home_subtitle">Keep your plan moving, one workout at a time.</string>
+    <string name="active_plan">Active plan</string>
+    <string name="no_active_plan">No plan saved yet</string>
+    <string name="no_active_plan_detail">Build a personal plan or follow a sample trainer plan to get started.</string>
+    <string name="open_my_plan">Open My Plan</string>
+    <string name="todays_workout">Today’s workout</string>
+    <string name="workout_ready">Your next workout is ready.</string>
+    <string name="complete_workout">Complete workout</string>
+    <string name="completed_today">Completed today</string>
+    <string name="already_completed_today">Today’s workout is already complete.</string>
+    <string name="workout_completed_message">Workout complete! You earned 10 points.</string>
+    <string name="weekly_progress">Weekly progress</string>
+    <string name="weekly_progress_format">%1$d of %2$d workouts completed</string>
+    <string name="plan_summary_format">%1$d days/week • %2$d minutes • %3$s</string>
+    <string name="workout_session_format">%1$s • Session %2$d</string>
+    <string name="workout_detail_format">%1$s • %2$d min</string>
+    <string name="trainer_summary_format">%1$s • %2$s</string>
+
+    <string name="my_plan_title">My Plan</string>
+    <string name="my_plan_subtitle">Create a routine that fits your real schedule and space.</string>
+    <string name="current_plan">Current plan</string>
+    <string name="build_your_plan">Build your plan</string>
+    <string name="build_your_plan_detail">Answer four short steps and receive a transparent preset recommendation.</string>
+    <string name="featured_trainer_plans">Featured trainer plans</string>
+    <string name="featured_trainer_detail">Follow one of three clearly labeled sample trainer routines.</string>
+    <string name="view_trainer_plans">View trainer plans</string>
+    <string name="workout_music">Workout music</string>
+    <string name="workout_music_detail">Choose a local demo track matched to low, moderate, or high intensity.</string>
+    <string name="choose_music">Choose music</string>
+    <string name="selected_music_format">Selected music: %1$s</string>
+
+    <string name="rewards_title">Rewards</string>
+    <string name="rewards_subtitle">Small wins add up. Complete workouts to build momentum.</string>
+    <string name="reward_points">Points</string>
+    <string name="completed_workouts">Completed workouts</string>
+    <string name="current_streak">Current streak</string>
+    <string name="points_format">%1$d pts</string>
+    <string name="count_format">%1$d</string>
+    <plurals name="days_format">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <string name="streak_placeholder">0 days</string>
+    <string name="next_milestone">Next milestone</string>
+    <string name="milestone_first">Complete your first workout</string>
+    <string name="milestone_three">Complete 3 workouts</string>
+    <string name="milestone_week">Complete 7 workouts</string>
+    <string name="milestone_consistency">Keep building your consistency</string>
+
+    <string name="back">Back</string>
+    <string name="continue_label">Continue</string>
+    <string name="see_recommendation">See recommendation</string>
+    <string name="step_format">Step %1$d of 4</string>
+
+    <string name="step_goal_title">What is your main goal?</string>
+    <string name="step_goal_detail">Choose one goal, a focus area, and how long you want to follow the plan.</string>
+    <string name="goal_label">Goal</string>
+    <string name="goal_fat_loss">Fat loss</string>
+    <string name="goal_build_muscle">Build muscle</string>
+    <string name="goal_stay_fit">Stay fit</string>
+    <string name="focus_area_label">Focus area</string>
+    <string name="focus_full_body">Full body</string>
+    <string name="focus_upper_body">Upper body</string>
+    <string name="focus_lower_body">Lower body</string>
+    <string name="focus_core">Core</string>
+    <string name="focus_cardio">Cardio</string>
+    <string name="timeframe_label">Timeframe</string>
+    <string name="weeks_2">2 weeks</string>
+    <string name="weeks_4">4 weeks</string>
+    <string name="weeks_6">6 weeks</string>
+    <string name="weeks_8">8 weeks</string>
+
+    <string name="step_intensity_title">Choose your intensity</string>
+    <string name="step_intensity_detail">Pick the level you can follow consistently. You can change it later.</string>
+    <string name="intensity_low">Low</string>
+    <string name="intensity_low_detail">Gentle movement and recovery-friendly sessions</string>
+    <string name="intensity_moderate">Moderate</string>
+    <string name="intensity_moderate_detail">Steady effort with manageable challenges</string>
+    <string name="intensity_high">High</string>
+    <string name="intensity_high_detail">Demanding sessions with more recovery needs</string>
+
+    <string name="step_schedule_title">Set your schedule</string>
+    <string name="step_schedule_detail">Choose a weekly frequency and a session length that fits your routine.</string>
+    <string name="days_per_week_label">Days per week</string>
+    <string name="days_2">2 days</string>
+    <string name="days_3">3 days</string>
+    <string name="days_4">4 days</string>
+    <string name="days_5">5 days</string>
+    <string name="days_6">6 days</string>
+    <string name="session_duration_label">Session duration</string>
+    <string name="minutes_15">15 min</string>
+    <string name="minutes_30">30 min</string>
+    <string name="minutes_45">45 min</string>
+    <string name="minutes_60">60 min</string>
+
+    <string name="step_equipment_title">What can you use?</string>
+    <string name="step_equipment_detail">Select every item you have, then choose your available workout space.</string>
+    <string name="equipment_label">Equipment</string>
+    <string name="equipment_none">No equipment</string>
+    <string name="equipment_mat">Yoga mat</string>
+    <string name="equipment_bands">Resistance bands</string>
+    <string name="equipment_dumbbells">Dumbbells</string>
+    <string name="space_label">Workout space</string>
+    <string name="space_dorm">Dorm / very small space</string>
+    <string name="space_small_room">Small room</string>
+    <string name="space_large">Large indoor / outdoor space</string>
+
+    <string name="error_choose_goal">Choose one main goal.</string>
+    <string name="error_choose_focus">Choose one focus area.</string>
+    <string name="error_choose_timeframe">Choose a timeframe.</string>
+    <string name="error_choose_intensity">Choose an intensity.</string>
+    <string name="error_choose_days">Choose your days per week.</string>
+    <string name="error_choose_duration">Choose a session duration.</string>
+    <string name="error_choose_equipment">Choose No equipment or at least one available item.</string>
+    <string name="error_choose_space">Choose your workout space.</string>
+
+    <string name="recommendation_title">Your recommended plan</string>
+    <string name="recommendation_subtitle">This match uses clear preset rules based on your answers—not AI.</string>
+    <string name="match_format">%1$d%% match</string>
+    <string name="closest_match_format">Closest match • %1$d%%</string>
+    <string name="why_it_fits">Why it fits</string>
+    <string name="weekly_schedule">Weekly schedule</string>
+    <string name="recommendation_details_format">%1$d weeks • %2$d days/week • %3$d minutes • %4$s</string>
+    <string name="save_this_plan">Save this plan</string>
+    <string name="plan_saved">Plan saved. It is now visible on Home.</string>
+    <string name="start_over">Change my answers</string>
+    <string name="explore_trainers">Explore trainer plans</string>
+    <string name="open_music">Open workout music</string>
+    <string name="missing_recommendation">The recommendation could not be loaded. Please build your plan again.</string>
+
+    <string name="trainer_title">Featured Trainer Plans</string>
+    <string name="trainer_subtitle">These are fictional sample profiles created for the class project.</string>
+    <string name="sample_profile">Sample trainer profile</string>
+    <string name="trainer_maya">Maya Chen</string>
+    <string name="trainer_maya_plan">Lean &amp; Energized</string>
+    <string name="trainer_maya_detail">Fat loss • Moderate • 4 days/week • 30 minutes • Mat or bands</string>
+    <string name="trainer_maya_description">Balanced cardio, strength, and mobility for steady energy.</string>
+    <string name="trainer_schedule_label">Weekly schedule</string>
+    <string name="trainer_maya_schedule">Mon — Cardio circuit\nTue — Full-body strength\nThu — Low-impact intervals\nSat — Mobility and core</string>
+    <string name="trainer_jordan">Jordan Brooks</string>
+    <string name="trainer_jordan_plan">Dorm Strength</string>
+    <string name="trainer_jordan_detail">Build muscle • Moderate • 3 days/week • 35 minutes • Bands or dumbbells</string>
+    <string name="trainer_jordan_description">A compact-space strength routine with simple progressions.</string>
+    <string name="trainer_jordan_schedule">Mon — Upper-body strength\nWed — Lower-body strength\nFri — Full-body circuit</string>
+    <string name="trainer_alex">Alex Rivera</string>
+    <string name="trainer_alex_plan">Power Builder</string>
+    <string name="trainer_alex_detail">Build muscle • High • 5 days/week • 50 minutes • Dumbbells</string>
+    <string name="trainer_alex_description">A higher-intensity split for users ready for longer sessions.</string>
+    <string name="trainer_alex_schedule">Mon — Upper power\nTue — Lower power\nWed — Core and mobility\nFri — Push and pull\nSat — Full-body challenge</string>
+    <string name="follow_this_plan">Follow this plan</string>
+    <string name="trainer_plan_saved">Trainer plan saved and set as your active plan.</string>
+
+    <string name="music_title">Workout Music</string>
+    <string name="music_subtitle">Original demo rhythms are stored inside the app. Nothing plays automatically.</string>
+    <string name="music_focus">Focus</string>
+    <string name="music_focus_detail">90 BPM • Recommended for low intensity</string>
+    <string name="music_energy">Energy</string>
+    <string name="music_energy_detail">125 BPM • Recommended for moderate intensity</string>
+    <string name="music_power">Power</string>
+    <string name="music_power_detail">145 BPM • Recommended for high intensity</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="music_selected_badge">Selected</string>
+    <string name="music_recommended_badge">Recommended for your active plan</string>
+    <string name="music_selected_recommended_badge">Selected • Recommended for your active plan</string>
+    <string name="music_selected_status">Selected: %1$s • Tap Play to start</string>
+    <string name="music_selected_stopped_status">Selected: %1$s • Playback stopped</string>
+    <string name="stop_music">Stop music</string>
+    <string name="now_playing_format">Now playing: %1$s</string>
+    <string name="music_stopped">Music stopped</string>
+    <string name="music_unavailable">This demo track is unavailable.</string>
+    <string name="content_back">Go back</string>
+</resources>

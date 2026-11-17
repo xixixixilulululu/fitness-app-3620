@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FitnessApp3620.Base" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <item name="colorSecondary">@color/color_coral</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnSurface">@color/color_text_primary</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowBackground">@color/color_app_background</item>
+        <item name="android:statusBarColor">@color/color_app_background</item>
+        <item name="android:navigationBarColor">@color/color_surface</item>
+    </style>
+
+    <style name="Theme.FitnessApp3620" parent="Theme.FitnessApp3620.Base" />
+</resources>

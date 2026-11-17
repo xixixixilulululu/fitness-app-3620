@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_sm"
+        android:paddingTop="@dimen/space_sm"
+        android:paddingEnd="@dimen/space_page"
+        android:paddingBottom="@dimen/space_sm">
+
+        <ImageButton
+            android:id="@+id/music_back_button"
+            android:layout_width="@dimen/touch_target"
+            android:layout_height="@dimen/touch_target"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_back"
+            android:padding="@dimen/space_md"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:text="@string/music_title"
+            android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/space_page"
+            android:paddingTop="@dimen/space_md"
+            android:paddingEnd="@dimen/space_page"
+            android:paddingBottom="@dimen/space_xl">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music_subtitle"
+                android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+            <TextView
+                android:id="@+id/music_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:text="@string/music_stopped"
+                android:textAppearance="@style/TextAppearance.Fitness.Body" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Fitness.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                app:cardBackgroundColor="@color/color_mint">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/space_page">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/music_focus" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/music_focus_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+                    <TextView android:id="@+id/music_focus_badge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textColor="@color/color_primary" android:textStyle="bold" android:visibility="gone" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/play_focus_button" style="@style/Widget.Fitness.SecondaryButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_lg" android:text="@string/play" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Fitness.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/space_page">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/music_energy" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/music_energy_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+                    <TextView android:id="@+id/music_energy_badge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textColor="@color/color_primary" android:textStyle="bold" android:visibility="gone" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/play_energy_button" style="@style/Widget.Fitness.SecondaryButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_lg" android:text="@string/play" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Fitness.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/space_page">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/music_power" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/music_power_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+                    <TextView android:id="@+id/music_power_badge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textColor="@color/color_primary" android:textStyle="bold" android:visibility="gone" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/play_power_button" style="@style/Widget.Fitness.SecondaryButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_lg" android:text="@string/play" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/stop_music_button"
+                style="@style/Widget.Fitness.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                android:text="@string/stop_music" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

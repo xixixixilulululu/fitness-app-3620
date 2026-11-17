@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/space_page"
+        android:paddingTop="@dimen/space_section"
+        android:paddingEnd="@dimen/space_page"
+        android:paddingBottom="@dimen/space_xl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_title"
+            android:textAppearance="@style/TextAppearance.Fitness.PageTitle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/home_subtitle"
+            android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Fitness.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_section"
+            app:cardBackgroundColor="@color/color_selection">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_page">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/active_plan"
+                    android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                <TextView
+                    android:id="@+id/home_plan_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/no_active_plan"
+                    android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+
+                <TextView
+                    android:id="@+id/home_plan_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/no_active_plan_detail"
+                    android:textAppearance="@style/TextAppearance.Fitness.Body" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_open_plan_button"
+                    style="@style/Widget.Fitness.SecondaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/open_my_plan" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_section"
+            android:text="@string/todays_workout"
+            android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Fitness.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_page">
+
+                <TextView
+                    android:id="@+id/home_workout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workout_ready"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_complete_button"
+                    style="@style/Widget.Fitness.PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:enabled="false"
+                    android:text="@string/complete_workout" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_section"
+            android:text="@string/weekly_progress"
+            android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Fitness.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_md">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/space_page">
+
+                <TextView
+                    android:id="@+id/home_progress_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weekly_progress_format"
+                    android:textAppearance="@style/TextAppearance.Fitness.Body" />
+
+                <ProgressBar
+                    android:id="@+id/home_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="@dimen/space_md"
+                    android:max="1"
+                    android:progress="0"
+                    android:progressTint="@color/color_primary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

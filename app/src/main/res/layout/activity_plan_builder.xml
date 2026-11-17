@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_sm"
+        android:paddingTop="@dimen/space_sm"
+        android:paddingEnd="@dimen/space_page"
+        android:paddingBottom="@dimen/space_sm">
+
+        <ImageButton
+            android:id="@+id/builder_close_button"
+            android:layout_width="@dimen/touch_target"
+            android:layout_height="@dimen/touch_target"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_back"
+            android:padding="@dimen/space_md"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:text="@string/build_your_plan"
+            android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/builder_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/space_page"
+            android:paddingTop="@dimen/space_md"
+            android:paddingEnd="@dimen/space_page"
+            android:paddingBottom="@dimen/space_xl">
+
+            <TextView
+                android:id="@+id/builder_step_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step_format"
+                android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+            <ProgressBar
+                android:id="@+id/builder_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/space_sm"
+                android:max="4"
+                android:progress="1"
+                android:progressTint="@color/color_primary" />
+
+            <LinearLayout
+                android:id="@+id/step_goal_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_goal_title"
+                    android:textAppearance="@style/TextAppearance.Fitness.PageTitle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/step_goal_detail"
+                    android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_section"
+                    android:text="@string/goal_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <RadioGroup
+                    android:id="@+id/goal_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/goal_fat_loss"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/touch_target"
+                        android:text="@string/goal_fat_loss" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/goal_build_muscle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/touch_target"
+                        android:text="@string/goal_build_muscle" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/goal_stay_fit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/touch_target"
+                        android:text="@string/goal_stay_fit" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/focus_area_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/focus_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:selectionRequired="false"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/focus_full_body"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus_full_body" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/focus_upper_body"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus_upper_body" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/focus_lower_body"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus_lower_body" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/focus_core"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus_core" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/focus_cardio"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus_cardio" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/timeframe_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/timeframe_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/weeks_2"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weeks_2" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/weeks_4"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weeks_4" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/weeks_6"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weeks_6" />
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/weeks_8"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/weeks_8" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_intensity_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_intensity_title"
+                    android:textAppearance="@style/TextAppearance.Fitness.PageTitle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/step_intensity_detail"
+                    android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                <RadioGroup
+                    android:id="@+id/intensity_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/intensity_low"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/touch_target"
+                        android:text="@string/intensity_low" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_xl"
+                        android:layout_marginBottom="@dimen/space_sm"
+                        android:text="@string/intensity_low_detail"
+                        android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/intensity_moderate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/touch_target"
+                        android:text="@string/intensity_moderate" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_xl"
+                        android:layout_marginBottom="@dimen/space_sm"
+                        android:text="@string/intensity_moderate_detail"
+                        android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/intensity_high"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/touch_target"
+                        android:text="@string/intensity_high" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space_xl"
+                        android:text="@string/intensity_high_detail"
+                        android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_schedule_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_schedule_title"
+                    android:textAppearance="@style/TextAppearance.Fitness.PageTitle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/step_schedule_detail"
+                    android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_section"
+                    android:text="@string/days_per_week_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/days_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip android:id="@+id/days_2" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_2" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_3" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_3" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_4" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_4" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_5" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_5" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_6" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_6" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/session_duration_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/duration_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_15" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_15" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_30" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_30" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_45" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_45" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_60" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_60" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_equipment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step_equipment_title"
+                    android:textAppearance="@style/TextAppearance.Fitness.PageTitle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    android:text="@string/step_equipment_detail"
+                    android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_section"
+                    android:text="@string/equipment_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/equipment_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:singleLine="false"
+                    app:singleSelection="false">
+
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_none" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_none" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_mat" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_mat" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_bands" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_bands" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_dumbbells" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_dumbbells" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_lg"
+                    android:text="@string/space_label"
+                    android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/space_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_sm"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip android:id="@+id/space_dorm" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_dorm" />
+                    <com.google.android.material.chip.Chip android:id="@+id/space_small_room" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_small_room" />
+                    <com.google.android.material.chip.Chip android:id="@+id/space_large" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_large" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_section"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/builder_back_button"
+                    style="@style/Widget.Fitness.SecondaryButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/space_sm"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:text="@string/back" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/builder_continue_button"
+                    style="@style/Widget.Fitness.PrimaryButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space_sm"
+                    android:layout_weight="1"
+                    android:text="@string/continue_label" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

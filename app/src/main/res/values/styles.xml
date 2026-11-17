@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Fitness.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/color_surface</item>
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">1dp</item>
+        <item name="strokeColor">@color/color_border</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+    </style>
+
+    <style name="Widget.Fitness.PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="backgroundTint">@color/primary_button_background</item>
+        <item name="android:textColor">@color/primary_button_text</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Widget.Fitness.SecondaryButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:textColor">@color/secondary_button_content</item>
+        <item name="strokeColor">@color/secondary_button_content</item>
+        <item name="cornerRadius">@dimen/button_radius</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextAppearance.Fitness.PageTitle" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Fitness.SectionTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:textSize">@dimen/section_title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Fitness.CardTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:textSize">@dimen/card_title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Fitness.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/color_text_primary</item>
+        <item name="android:textSize">@dimen/body_size</item>
+    </style>
+
+    <style name="TextAppearance.Fitness.Metadata" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/color_text_secondary</item>
+        <item name="android:textSize">@dimen/metadata_size</item>
+    </style>
+</resources>
