@@ -21,7 +21,7 @@ Users can also choose a featured trainer plan or select music from **My Plan**.
 
 ### Personalized plan builder
 
-The four-step builder validates each step before continuing:
+The four-step builder validates each step before continuing. Every selectable goal, focus, timeframe, intensity, schedule, equipment, and space option includes a theme-aware vector icon:
 
 1. **Goal** — fat loss, build muscle, or stay fit; focus area; and a 2–8 week timeframe
 2. **Intensity** — low, moderate, or high
@@ -32,7 +32,7 @@ A local rule-based recommendation engine scores five preset plans, produces a ma
 
 ### Featured trainer plans
 
-Three fictional sample trainer plans are available. Each card shows an illustrative height, starting/current weight, example journey length, and full weekly schedule before the user follows it. These comparison profiles do not promise individual results.
+Three fictional sample trainer plans are available. Each card includes a generated fictional portrait plus an illustrative height, starting/current weight, example journey length, and full weekly schedule before the user follows it. These comparison profiles do not represent real people or promise individual results.
 
 ### Workout music
 
@@ -69,6 +69,7 @@ See [UI Design System](docs/UI_DESIGN.md) for the full design rules.
 - **Architecture:** one `MainActivity` with Home, My Plan, and Rewards fragments; focused activities for plan building, recommendations, trainers, and music
 - **Local state:** `SharedPreferences`
 - **Music:** `MediaPlayer` with three complete licensed MP3 files in `res/raw`
+- **Visual assets:** three transparent fictional profile portraits plus theme-aware Android vector icons
 - **Build:** Gradle 7.4 and Android Gradle Plugin 7.3.0
 - **Android:** minimum SDK 21; compile/target SDK 32
 - **Tests:** JUnit 4, AndroidX Test, and Espresso
@@ -189,6 +190,7 @@ The current branch supplies an integrated MVP for demonstration and team review.
 - [Full feature specification](docs/FEATURES.md)
 - [UI design system](docs/UI_DESIGN.md)
 - [Integration guide](docs/INTEGRATION.md)
+- [Visual asset provenance and prompts](docs/ASSETS.md)
 - [Third-party music notices](THIRD_PARTY_NOTICES.md)
 - [Team contribution guide](CONTRIBUTING.md)
 

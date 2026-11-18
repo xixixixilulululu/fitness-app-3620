@@ -5,6 +5,7 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.scrollTo;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.containsString;
@@ -99,6 +100,10 @@ public class CompletePlanFlowInstrumentedTest {
         onView(withText(R.string.trainer_jordan_schedule))
                 .perform(scrollTo())
                 .check(matches(isDisplayed()));
+        onView(withId(R.id.jordan_profile_image))
+                .perform(scrollTo())
+                .check(matches(isDisplayed()))
+                .check(matches(withContentDescription(R.string.trainer_jordan_image_description)));
         onView(withId(R.id.jordan_profile_metrics))
                 .perform(scrollTo())
                 .check(matches(withText(containsString("Height: 178 cm"))))

@@ -69,8 +69,22 @@
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/space_page">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_profile" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_maya" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_maya_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:gravity="center_vertical" android:orientation="horizontal">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/maya_profile_image"
+                            android:layout_width="@dimen/trainer_avatar_size"
+                            android:layout_height="@dimen/trainer_avatar_size"
+                            android:contentDescription="@string/trainer_maya_image_description"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/trainer_maya"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearance.Fitness.Avatar"
+                            app:strokeColor="@color/color_border"
+                            app:strokeWidth="@dimen/stroke_width" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_lg" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/trainer_maya" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_maya_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                        </LinearLayout>
+                    </LinearLayout>
                     <TextView android:id="@+id/maya_profile_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_maya_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_maya_description" android:textAppearance="@style/TextAppearance.Fitness.Body" />
@@ -88,8 +102,22 @@
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/space_page">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_profile" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_jordan" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_jordan_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:gravity="center_vertical" android:orientation="horizontal">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/jordan_profile_image"
+                            android:layout_width="@dimen/trainer_avatar_size"
+                            android:layout_height="@dimen/trainer_avatar_size"
+                            android:contentDescription="@string/trainer_jordan_image_description"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/trainer_jordan"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearance.Fitness.Avatar"
+                            app:strokeColor="@color/color_border"
+                            app:strokeWidth="@dimen/stroke_width" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_lg" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/trainer_jordan" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_jordan_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                        </LinearLayout>
+                    </LinearLayout>
                     <TextView android:id="@+id/jordan_profile_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_jordan_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_jordan_description" android:textAppearance="@style/TextAppearance.Fitness.Body" />
@@ -107,8 +135,22 @@
 
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/space_page">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_profile" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_alex" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_alex_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:gravity="center_vertical" android:orientation="horizontal">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/alex_profile_image"
+                            android:layout_width="@dimen/trainer_avatar_size"
+                            android:layout_height="@dimen/trainer_avatar_size"
+                            android:contentDescription="@string/trainer_alex_image_description"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/trainer_alex"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearance.Fitness.Avatar"
+                            app:strokeColor="@color/color_border"
+                            app:strokeWidth="@dimen/stroke_width" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="@dimen/space_lg" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/trainer_alex" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_alex_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                        </LinearLayout>
+                    </LinearLayout>
                     <TextView android:id="@+id/alex_profile_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_alex_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_alex_description" android:textAppearance="@style/TextAppearance.Fitness.Body" />

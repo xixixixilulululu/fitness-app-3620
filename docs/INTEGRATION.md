@@ -165,6 +165,8 @@ Prefer the reusable styles already defined in `styles.xml`:
 
 All user-visible text belongs in `strings.xml`. Shared icons belong in `drawable/`. Do not create a second theme for one feature screen.
 
+Plan Builder option icons are Android vector drawables in `res/drawable` and use semantic color resources so a palette change does not require redrawing them. The three fictional profile portraits are 512×512 transparent PNGs in `res/drawable-nodpi`; keep their filenames and content descriptions synchronized with `activity_trainer_plans.xml`. Creation notes and final prompts are in `docs/ASSETS.md`.
+
 ## Licensed offline music
 
 The app does not use Spotify, YouTube, streaming, or network playback. It bundles three complete MP3 tracks from Kevin MacLeod’s official Incompetech catalog under Creative Commons Attribution 4.0:

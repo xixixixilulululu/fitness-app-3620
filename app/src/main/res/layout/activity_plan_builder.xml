@@ -102,18 +102,27 @@
                         android:id="@+id/goal_fat_loss"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/touch_target"
+                        android:drawableStart="@drawable/ic_goal_fire"
+                        android:drawablePadding="@dimen/space_sm"
+                        android:gravity="center_vertical"
                         android:text="@string/goal_fat_loss" />
 
                     <com.google.android.material.radiobutton.MaterialRadioButton
                         android:id="@+id/goal_build_muscle"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/touch_target"
+                        android:drawableStart="@drawable/ic_fitness_center"
+                        android:drawablePadding="@dimen/space_sm"
+                        android:gravity="center_vertical"
                         android:text="@string/goal_build_muscle" />
 
                     <com.google.android.material.radiobutton.MaterialRadioButton
                         android:id="@+id/goal_stay_fit"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/touch_target"
+                        android:drawableStart="@drawable/ic_favorite"
+                        android:drawablePadding="@dimen/space_sm"
+                        android:gravity="center_vertical"
                         android:text="@string/goal_stay_fit" />
                 </RadioGroup>
 
@@ -135,34 +144,39 @@
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/focus_full_body"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/focus_full_body" />
+                        android:text="@string/focus_full_body"
+                        app:chipIcon="@drawable/ic_person_body" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/focus_upper_body"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/focus_upper_body" />
+                        android:text="@string/focus_upper_body"
+                        app:chipIcon="@drawable/ic_fitness_center" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/focus_lower_body"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/focus_lower_body" />
+                        android:text="@string/focus_lower_body"
+                        app:chipIcon="@drawable/ic_walk" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/focus_core"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/focus_core" />
+                        android:text="@string/focus_core"
+                        app:chipIcon="@drawable/ic_core_target" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/focus_cardio"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/focus_cardio" />
+                        android:text="@string/focus_cardio"
+                        app:chipIcon="@drawable/ic_favorite" />
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
@@ -182,28 +196,32 @@
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/weeks_2"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/weeks_2" />
+                        android:text="@string/weeks_2"
+                        app:chipIcon="@drawable/ic_calendar" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/weeks_4"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/weeks_4" />
+                        android:text="@string/weeks_4"
+                        app:chipIcon="@drawable/ic_calendar" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/weeks_6"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/weeks_6" />
+                        android:text="@string/weeks_6"
+                        app:chipIcon="@drawable/ic_calendar" />
                     <com.google.android.material.chip.Chip
                         android:id="@+id/weeks_8"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        style="@style/Widget.Fitness.ChoiceChip"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/weeks_8" />
+                        android:text="@string/weeks_8"
+                        app:chipIcon="@drawable/ic_calendar" />
                 </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
 
@@ -238,6 +256,9 @@
                         android:id="@+id/intensity_low"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_intensity_low"
+                        android:drawablePadding="@dimen/space_sm"
+                        android:gravity="center_vertical"
                         android:minHeight="@dimen/touch_target"
                         android:text="@string/intensity_low" />
 
@@ -253,6 +274,9 @@
                         android:id="@+id/intensity_moderate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_intensity_moderate"
+                        android:drawablePadding="@dimen/space_sm"
+                        android:gravity="center_vertical"
                         android:minHeight="@dimen/touch_target"
                         android:text="@string/intensity_moderate" />
 
@@ -268,6 +292,9 @@
                         android:id="@+id/intensity_high"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_intensity_high"
+                        android:drawablePadding="@dimen/space_sm"
+                        android:gravity="center_vertical"
                         android:minHeight="@dimen/touch_target"
                         android:text="@string/intensity_high" />
 
@@ -316,11 +343,11 @@
                     app:singleLine="false"
                     app:singleSelection="true">
 
-                    <com.google.android.material.chip.Chip android:id="@+id/days_2" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_2" />
-                    <com.google.android.material.chip.Chip android:id="@+id/days_3" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_3" />
-                    <com.google.android.material.chip.Chip android:id="@+id/days_4" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_4" />
-                    <com.google.android.material.chip.Chip android:id="@+id/days_5" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_5" />
-                    <com.google.android.material.chip.Chip android:id="@+id/days_6" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_6" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_2" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_2" app:chipIcon="@drawable/ic_calendar" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_3" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_3" app:chipIcon="@drawable/ic_calendar" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_4" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_4" app:chipIcon="@drawable/ic_calendar" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_5" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_5" app:chipIcon="@drawable/ic_calendar" />
+                    <com.google.android.material.chip.Chip android:id="@+id/days_6" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/days_6" app:chipIcon="@drawable/ic_calendar" />
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
@@ -338,10 +365,10 @@
                     app:singleLine="false"
                     app:singleSelection="true">
 
-                    <com.google.android.material.chip.Chip android:id="@+id/minutes_15" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_15" />
-                    <com.google.android.material.chip.Chip android:id="@+id/minutes_30" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_30" />
-                    <com.google.android.material.chip.Chip android:id="@+id/minutes_45" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_45" />
-                    <com.google.android.material.chip.Chip android:id="@+id/minutes_60" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_60" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_15" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_15" app:chipIcon="@drawable/ic_clock" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_30" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_30" app:chipIcon="@drawable/ic_clock" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_45" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_45" app:chipIcon="@drawable/ic_clock" />
+                    <com.google.android.material.chip.Chip android:id="@+id/minutes_60" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_60" app:chipIcon="@drawable/ic_clock" />
                 </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
 
@@ -381,10 +408,10 @@
                     app:singleLine="false"
                     app:singleSelection="false">
 
-                    <com.google.android.material.chip.Chip android:id="@+id/equipment_none" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_none" />
-                    <com.google.android.material.chip.Chip android:id="@+id/equipment_mat" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_mat" />
-                    <com.google.android.material.chip.Chip android:id="@+id/equipment_bands" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_bands" />
-                    <com.google.android.material.chip.Chip android:id="@+id/equipment_dumbbells" style="@style/Widget.MaterialComponents.Chip.Filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_dumbbells" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_none" style="@style/Widget.Fitness.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_none" app:chipIcon="@drawable/ic_person_body" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_mat" style="@style/Widget.Fitness.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_mat" app:chipIcon="@drawable/ic_yoga_mat" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_bands" style="@style/Widget.Fitness.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_bands" app:chipIcon="@drawable/ic_resistance_band" />
+                    <com.google.android.material.chip.Chip android:id="@+id/equipment_dumbbells" style="@style/Widget.Fitness.FilterChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equipment_dumbbells" app:chipIcon="@drawable/ic_fitness_center" />
                 </com.google.android.material.chip.ChipGroup>
 
                 <TextView
@@ -402,9 +429,9 @@
                     app:singleLine="false"
                     app:singleSelection="true">
 
-                    <com.google.android.material.chip.Chip android:id="@+id/space_dorm" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_dorm" />
-                    <com.google.android.material.chip.Chip android:id="@+id/space_small_room" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_small_room" />
-                    <com.google.android.material.chip.Chip android:id="@+id/space_large" style="@style/Widget.MaterialComponents.Chip.Choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_large" />
+                    <com.google.android.material.chip.Chip android:id="@+id/space_dorm" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_dorm" app:chipIcon="@drawable/ic_dorm" />
+                    <com.google.android.material.chip.Chip android:id="@+id/space_small_room" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_small_room" app:chipIcon="@drawable/ic_space_home" />
+                    <com.google.android.material.chip.Chip android:id="@+id/space_large" style="@style/Widget.Fitness.ChoiceChip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/space_large" app:chipIcon="@drawable/ic_outdoors" />
                 </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
 

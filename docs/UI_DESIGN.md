@@ -113,6 +113,13 @@ Selected state must include:
 
 Do not communicate selection with color alone.
 
+### Illustrations and icons
+
+- Fictional trainer profiles use a consistent circular head-and-shoulders illustration with a text description that explicitly identifies the subject as fictional.
+- Plan Builder selections use simple Android vector icons whose colors reference shared semantic resources.
+- Keep icons secondary to the label; do not replace written choices with image-only controls.
+- Portraits must not use real identities or imply that the sample weight change is a guaranteed result.
+
 ### Chips
 
 Use short chips for goals, days per week, duration, equipment, and space. Keep single-select and multi-select behavior consistent within each group.

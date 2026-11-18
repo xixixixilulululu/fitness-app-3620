@@ -26,6 +26,23 @@
         <item name="android:textSize">15sp</item>
     </style>
 
+    <style name="Widget.Fitness.ChoiceChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipIconSize">18dp</item>
+        <item name="chipIconTint">@color/color_primary</item>
+        <item name="chipIconVisible">true</item>
+    </style>
+
+    <style name="Widget.Fitness.FilterChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipIconSize">18dp</item>
+        <item name="chipIconTint">@color/color_primary</item>
+        <item name="chipIconVisible">true</item>
+    </style>
+
+    <style name="ShapeAppearance.Fitness.Avatar" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
     <style name="TextAppearance.Fitness.PageTitle" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textColor">@color/color_text_primary</item>
         <item name="android:textSize">@dimen/title_size</item>
