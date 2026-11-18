@@ -52,6 +52,14 @@
                 android:text="@string/trainer_subtitle"
                 android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_sm"
+                android:text="@string/trainer_disclaimer"
+                android:textAppearance="@style/TextAppearance.Fitness.Metadata"
+                android:textColor="@color/color_text_primary" />
+
             <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.Fitness.Card"
                 android:layout_width="match_parent"
@@ -63,6 +71,7 @@
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_profile" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_maya" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_maya_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                    <TextView android:id="@+id/maya_profile_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_maya_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_maya_description" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_lg" android:text="@string/trainer_schedule_label" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
@@ -81,6 +90,7 @@
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_profile" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_jordan" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_jordan_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                    <TextView android:id="@+id/jordan_profile_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_jordan_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_jordan_description" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_lg" android:text="@string/trainer_schedule_label" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
@@ -99,6 +109,7 @@
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sample_profile" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_alex" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_xs" android:text="@string/trainer_alex_plan" android:textAppearance="@style/TextAppearance.Fitness.SectionTitle" />
+                    <TextView android:id="@+id/alex_profile_metrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_alex_detail" android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_sm" android:text="@string/trainer_alex_description" android:textAppearance="@style/TextAppearance.Fitness.Body" />
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/space_lg" android:text="@string/trainer_schedule_label" android:textAppearance="@style/TextAppearance.Fitness.CardTitle" />

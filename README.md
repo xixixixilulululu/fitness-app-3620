@@ -4,7 +4,7 @@ An Android fitness app for the **TECH 3620 group project**. The working MVP lets
 
 > **Current implementation branch:** `feature/plan-tianrui`
 >
-> **MVP status:** The Debug build, all 14 JVM unit tests, and all 5 on-device instrumentation tests pass. The branch is ready for team review, physical-device/accessibility QA, and integration.
+> **MVP status:** The Debug build, all 16 JVM unit tests, and all 6 on-device instrumentation tests pass. The branch is ready for team review, physical-device/accessibility QA, and integration.
 
 ## Implemented user journey
 
@@ -32,17 +32,17 @@ A local rule-based recommendation engine scores five preset plans, produces a ma
 
 ### Featured trainer plans
 
-Three sample trainer plans are available. Each card previews the full weekly schedule before the user follows it, then saves its trainer, schedule, intensity, equipment, and space across the app.
+Three fictional sample trainer plans are available. Each card shows an illustrative height, starting/current weight, example journey length, and full weekly schedule before the user follows it. These comparison profiles do not promise individual results.
 
 ### Workout music
 
-The MVP includes three local demo tracks:
+The MVP includes three complete licensed instrumental tracks stored locally for reliable offline playback:
 
-- **Focus** — 90 BPM / low intensity
-- **Energy** — 125 BPM / moderate intensity
-- **Power** — 145 BPM / high intensity
+- **Focus — Deliberate Thought** — 69 BPM / low intensity
+- **Energy — Brain Dance** — 124 BPM / moderate intensity
+- **Power — Cloud Dancer** — 214 BPM / high intensity
 
-`MediaPlayer` provides play, pause, looping, and stop controls. The selected track is restored when the screen reopens, and the track matching the active plan intensity is labeled as recommended.
+`MediaPlayer` provides play, pause, looping, and stop controls. The selected track is restored when the screen reopens, and the track matching the active plan intensity is labeled as recommended. All three tracks are by Kevin MacLeod and licensed under CC BY 4.0; see [Third-Party Notices](THIRD_PARTY_NOTICES.md).
 
 ### Rewards
 
@@ -68,7 +68,7 @@ See [UI Design System](docs/UI_DESIGN.md) for the full design rules.
 - **Layouts:** XML and Material Components
 - **Architecture:** one `MainActivity` with Home, My Plan, and Rewards fragments; focused activities for plan building, recommendations, trainers, and music
 - **Local state:** `SharedPreferences`
-- **Music:** `MediaPlayer` with three WAV files in `res/raw`
+- **Music:** `MediaPlayer` with three complete licensed MP3 files in `res/raw`
 - **Build:** Gradle 7.4 and Android Gradle Plugin 7.3.0
 - **Android:** minimum SDK 21; compile/target SDK 32
 - **Tests:** JUnit 4, AndroidX Test, and Espresso
@@ -126,19 +126,19 @@ app/build/outputs/apk/debug/app-debug.apk
 
 ### Verified result
 
-The current branch was verified with 14 JVM unit tests:
+The current branch was verified with 16 JVM unit tests:
 
 ```text
 BUILD SUCCESSFUL
-14 tests, 0 failures, 0 errors, 0 skipped
+16 tests, 0 failures, 0 errors, 0 skipped
 ```
 
-Those tests cover required plan input, invalid/contradictory equipment, representative recommendations, honest tradeoff explanations, match-score bounds, and seven-day schedule generation.
+Those tests cover required plan input, invalid/contradictory equipment, representative recommendations, honest tradeoff explanations, match-score bounds, seven-day schedule generation, and trainer-profile comparison data.
 
-Five Android instrumentation tests also pass on an API 36 emulator. They cover preference persistence and rollover behavior plus two complete UI journeys: saving and completing a personal plan, and following a trainer plan with music playback controls. The verified direct runner result is:
+Six Android instrumentation tests also pass on an API 36 emulator. They cover preference persistence and rollover behavior, verify that all three bundled tracks are longer than one minute and start successfully, and exercise two complete UI journeys: saving and completing a personal plan, and following a trainer plan with music playback controls. The verified direct runner result is:
 
 ```text
-OK (5 tests)
+OK (6 tests)
 ```
 
 The API 36 verification used the test APKs and `AndroidJUnitRunner` directly:
@@ -150,7 +150,7 @@ adb shell am instrument -w -r \
   edu.kean.fitnessapp.test/androidx.test.runner.AndroidJUnitRunner
 ```
 
-With this older Android Gradle Plugin 7.3 setup, `connectedDebugAndroidTest` may report an aborted zero-test run on an API 36 image because its bundled device tooling predates that image. That orchestration issue is separate from the test APK: the same five tests pass through the direct runner above. A physical team device should still be checked before the final demo.
+With this older Android Gradle Plugin 7.3 setup, `connectedDebugAndroidTest` may report an aborted zero-test run on an API 36 image because its bundled device tooling predates that image. That orchestration issue is separate from the test APK: the same six tests pass through the direct runner above. A physical team device should still be checked before the final demo.
 
 ## Team responsibilities
 
@@ -175,12 +175,12 @@ The current branch supplies an integrated MVP for demonstration and team review.
 - [x] Implement local workout music
 - [x] Persist plans, music, progress, points, and streaks
 - [x] Connect the complete MVP user journey
-- [x] Add 14 JVM unit tests and verify a Debug APK build
-- [x] Pass 5 instrumentation tests on an emulator
+- [x] Add 16 JVM unit tests and verify a Debug APK build
+- [x] Pass 6 instrumentation tests on an emulator
 - [ ] Confirm Ryan's responsibility
 - [ ] Review feature ownership and shared files with the full team
 - [ ] Complete physical-device and accessibility QA
-- [ ] Replace or approve final demo content and audio assets
+- [ ] Approve the final licensed audio and fictional profile content with the team
 - [ ] Merge approved work into `main`
 - [ ] Prepare the final demonstration and presentation
 
@@ -189,6 +189,7 @@ The current branch supplies an integrated MVP for demonstration and team review.
 - [Full feature specification](docs/FEATURES.md)
 - [UI design system](docs/UI_DESIGN.md)
 - [Integration guide](docs/INTEGRATION.md)
+- [Third-party music notices](THIRD_PARTY_NOTICES.md)
 - [Team contribution guide](CONTRIBUTING.md)
 
 ## Collaboration

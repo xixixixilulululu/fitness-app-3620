@@ -34,7 +34,7 @@
     <string name="featured_trainer_detail">Follow one of three clearly labeled sample trainer routines.</string>
     <string name="view_trainer_plans">View trainer plans</string>
     <string name="workout_music">Workout music</string>
-    <string name="workout_music_detail">Choose a local demo track matched to low, moderate, or high intensity.</string>
+    <string name="workout_music_detail">Choose a complete licensed track matched to low, moderate, or high intensity.</string>
     <string name="choose_music">Choose music</string>
     <string name="selected_music_format">Selected music: %1$s</string>
 
@@ -138,8 +138,10 @@
     <string name="missing_recommendation">The recommendation could not be loaded. Please build your plan again.</string>
 
     <string name="trainer_title">Featured Trainer Plans</string>
-    <string name="trainer_subtitle">These are fictional sample profiles created for the class project.</string>
-    <string name="sample_profile">Sample trainer profile</string>
+    <string name="trainer_subtitle">Compare each fictional profile’s measurements, goal, equipment, and routine before choosing.</string>
+    <string name="trainer_disclaimer">Illustrative data only. Results vary, and body measurements alone should not determine a workout plan.</string>
+    <string name="sample_profile">Fictional example profile</string>
+    <string name="trainer_profile_metrics_format">Height: %1$d cm (%2$d ft %3$d in)\nIllustrative progress: %4$.0f kg (%5$d lb) → %6$.0f kg (%7$d lb)\nExample journey: %8$d days</string>
     <string name="trainer_maya">Maya Chen</string>
     <string name="trainer_maya_plan">Lean &amp; Energized</string>
     <string name="trainer_maya_detail">Fat loss • Moderate • 4 days/week • 30 minutes • Mat or bands</string>
@@ -156,17 +158,18 @@
     <string name="trainer_alex_detail">Build muscle • High • 5 days/week • 50 minutes • Dumbbells</string>
     <string name="trainer_alex_description">A higher-intensity split for users ready for longer sessions.</string>
     <string name="trainer_alex_schedule">Mon — Upper power\nTue — Lower power\nWed — Core and mobility\nFri — Push and pull\nSat — Full-body challenge</string>
-    <string name="follow_this_plan">Follow this plan</string>
+    <string name="follow_this_plan">Follow this sample plan</string>
     <string name="trainer_plan_saved">Trainer plan saved and set as your active plan.</string>
 
     <string name="music_title">Workout Music</string>
-    <string name="music_subtitle">Original demo rhythms are stored inside the app. Nothing plays automatically.</string>
-    <string name="music_focus">Focus</string>
-    <string name="music_focus_detail">90 BPM • Recommended for low intensity</string>
-    <string name="music_energy">Energy</string>
-    <string name="music_energy_detail">125 BPM • Recommended for moderate intensity</string>
-    <string name="music_power">Power</string>
-    <string name="music_power_detail">145 BPM • Recommended for high intensity</string>
+    <string name="music_subtitle">Three complete instrumental tracks are stored inside the app. Tap Play to listen; nothing starts automatically.</string>
+    <string name="music_focus">Focus — Deliberate Thought</string>
+    <string name="music_focus_detail">Kevin MacLeod • 69 BPM • 2:57 • Low intensity</string>
+    <string name="music_energy">Energy — Brain Dance</string>
+    <string name="music_energy_detail">Kevin MacLeod • 124 BPM • 3:35 • Moderate intensity</string>
+    <string name="music_power">Power — Cloud Dancer</string>
+    <string name="music_power_detail">Kevin MacLeod • 214 BPM • 3:40 • High intensity</string>
+    <string name="music_license_notice">Music by Kevin MacLeod (incompetech.com), licensed under Creative Commons Attribution 4.0.</string>
     <string name="play">Play</string>
     <string name="pause">Pause</string>
     <string name="music_selected_badge">Selected</string>
@@ -177,6 +180,6 @@
     <string name="stop_music">Stop music</string>
     <string name="now_playing_format">Now playing: %1$s</string>
     <string name="music_stopped">Music stopped</string>
-    <string name="music_unavailable">This demo track is unavailable.</string>
+    <string name="music_unavailable">This music track is unavailable.</string>
     <string name="content_back">Go back</string>
 </resources>

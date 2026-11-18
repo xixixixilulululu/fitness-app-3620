@@ -92,13 +92,14 @@ Featured Trainer Plans are a required feature.
 Each card shows:
 
 - Sample trainer name and image or avatar
+- Illustrative height, starting/current weight, and example journey length
 - Training goal and intensity
 - Days per week and session duration
 - Required equipment
 - Short description
 - View plan action
 
-The detail screen lets the user review the schedule, see who the plan is for, and follow or save it. Local sample data is enough; accounts, social features, and online trainer data are not required.
+The detail screen lets the user compare the fictional profile, review the schedule, see who the plan is for, and follow or save it. The profile data must be labeled illustrative because body measurements do not guarantee similar results. Local sample data is enough; accounts, social features, and online trainer data are not required.
 
 ## 4. Workout Music
 
@@ -112,7 +113,7 @@ Suggested local playlists:
 
 Each option shows the name, BPM or energy level, recommended intensity, play/pause controls, and current playing state.
 
-Store permitted audio files in res/raw and use Android MediaPlayer. Release playback appropriately when leaving the screen. The user may choose a different playlist from the recommendation.
+Store permitted, attributable audio files in `res/raw` and use Android `MediaPlayer`. Release playback appropriately when leaving the screen. The user may choose a different track from the recommendation, and the repository must retain the license/source notice for every bundled track.
 
 The MVP does not require Spotify, YouTube, streaming, authorization, automatic beat detection, or online search.
 

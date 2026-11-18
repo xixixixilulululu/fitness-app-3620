@@ -12,9 +12,9 @@ public final class MusicRepository {
 
     public static List<MusicTrack> getTracks() {
         return Arrays.asList(
-                new MusicTrack("focus", "Focus", 90, PlanSelection.INTENSITY_LOW, R.raw.focus_demo),
-                new MusicTrack("energy", "Energy", 125, PlanSelection.INTENSITY_MODERATE, R.raw.energy_demo),
-                new MusicTrack("power", "Power", 145, PlanSelection.INTENSITY_HIGH, R.raw.power_demo)
+                new MusicTrack("focus", "Deliberate Thought", 69, PlanSelection.INTENSITY_LOW, R.raw.deliberate_thought),
+                new MusicTrack("energy", "Brain Dance", 124, PlanSelection.INTENSITY_MODERATE, R.raw.brain_dance),
+                new MusicTrack("power", "Cloud Dancer", 214, PlanSelection.INTENSITY_HIGH, R.raw.cloud_dancer)
         );
     }
 }

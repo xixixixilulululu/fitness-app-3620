@@ -107,6 +107,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space_section"
                 android:text="@string/stop_music" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_lg"
+                android:text="@string/music_license_notice"
+                android:textAppearance="@style/TextAppearance.Fitness.Metadata" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

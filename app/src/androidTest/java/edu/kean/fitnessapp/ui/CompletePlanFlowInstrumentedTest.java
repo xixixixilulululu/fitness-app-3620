@@ -7,6 +7,7 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
+import static org.hamcrest.Matchers.containsString;
 
 import android.app.Activity;
 import android.content.Context;
@@ -98,6 +99,10 @@ public class CompletePlanFlowInstrumentedTest {
         onView(withText(R.string.trainer_jordan_schedule))
                 .perform(scrollTo())
                 .check(matches(isDisplayed()));
+        onView(withId(R.id.jordan_profile_metrics))
+                .perform(scrollTo())
+                .check(matches(withText(containsString("Height: 178 cm"))))
+                .check(matches(withText(containsString("Example journey: 90 days"))));
         onView(withId(R.id.follow_jordan_button)).perform(scrollTo(), click());
 
         onView(withId(R.id.home_plan_name))
@@ -112,13 +117,13 @@ public class CompletePlanFlowInstrumentedTest {
 
         onView(withId(R.id.play_energy_button)).perform(scrollTo(), click());
         onView(withId(R.id.music_status))
-                .check(matches(withText("Now playing: Energy")));
+                .check(matches(withText("Now playing: Brain Dance")));
         onView(withId(R.id.play_energy_button)).perform(click());
         onView(withId(R.id.play_energy_button)).check(matches(withText(R.string.play)));
 
         onView(withId(R.id.stop_music_button)).perform(scrollTo(), click());
         onView(withId(R.id.music_status))
-                .check(matches(withText("Selected: Energy • Playback stopped")));
+                .check(matches(withText("Selected: Brain Dance • Playback stopped")));
     }
 
     private void clearPreferences() {

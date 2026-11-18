@@ -17,6 +17,10 @@ public final class TrainerPlan {
     private final Set<String> equipment;
     private final String space;
     private final List<String> workoutSequence;
+    private final int heightCm;
+    private final double startingWeightKg;
+    private final double currentWeightKg;
+    private final int exampleJourneyDays;
 
     public TrainerPlan(
             String id,
@@ -28,7 +32,11 @@ public final class TrainerPlan {
             int sessionMinutes,
             Set<String> equipment,
             String space,
-            List<String> workoutSequence
+            List<String> workoutSequence,
+            int heightCm,
+            double startingWeightKg,
+            double currentWeightKg,
+            int exampleJourneyDays
     ) {
         this.id = id;
         this.trainerName = trainerName;
@@ -40,6 +48,10 @@ public final class TrainerPlan {
         this.equipment = Collections.unmodifiableSet(new LinkedHashSet<>(equipment));
         this.space = space;
         this.workoutSequence = Collections.unmodifiableList(new ArrayList<>(workoutSequence));
+        this.heightCm = heightCm;
+        this.startingWeightKg = startingWeightKg;
+        this.currentWeightKg = currentWeightKg;
+        this.exampleJourneyDays = exampleJourneyDays;
     }
 
     public String getId() { return id; }
@@ -52,4 +64,8 @@ public final class TrainerPlan {
     public Set<String> getEquipment() { return equipment; }
     public String getSpace() { return space; }
     public List<String> getWorkoutSequence() { return workoutSequence; }
+    public int getHeightCm() { return heightCm; }
+    public double getStartingWeightKg() { return startingWeightKg; }
+    public double getCurrentWeightKg() { return currentWeightKg; }
+    public int getExampleJourneyDays() { return exampleJourneyDays; }
 }

@@ -23,7 +23,11 @@ public final class TrainerRepository {
                 30,
                 new LinkedHashSet<>(Arrays.asList(PlanSelection.EQUIPMENT_MAT, PlanSelection.EQUIPMENT_BANDS)),
                 PlanSelection.SPACE_SMALL_ROOM,
-                Arrays.asList("Cardio Circuit", "Full-Body Strength", "Low-Impact Intervals", "Mobility & Core")
+                Arrays.asList("Cardio Circuit", "Full-Body Strength", "Low-Impact Intervals", "Mobility & Core"),
+                165,
+                75,
+                68,
+                84
         ));
         plans.add(new TrainerPlan(
                 "jordan_dorm_strength",
@@ -35,7 +39,11 @@ public final class TrainerRepository {
                 35,
                 new LinkedHashSet<>(Arrays.asList(PlanSelection.EQUIPMENT_BANDS, PlanSelection.EQUIPMENT_DUMBBELLS)),
                 PlanSelection.SPACE_DORM,
-                Arrays.asList("Upper-Body Strength", "Lower-Body Strength", "Full-Body Circuit")
+                Arrays.asList("Upper-Body Strength", "Lower-Body Strength", "Full-Body Circuit"),
+                178,
+                64,
+                70,
+                90
         ));
         plans.add(new TrainerPlan(
                 "alex_power_builder",
@@ -47,7 +55,11 @@ public final class TrainerRepository {
                 50,
                 new LinkedHashSet<>(Arrays.asList(PlanSelection.EQUIPMENT_DUMBBELLS)),
                 PlanSelection.SPACE_SMALL_ROOM,
-                Arrays.asList("Upper Power", "Lower Power", "Core & Mobility", "Push & Pull", "Full-Body Challenge")
+                Arrays.asList("Upper Power", "Lower Power", "Core & Mobility", "Push & Pull", "Full-Body Challenge"),
+                183,
+                86,
+                90,
+                112
         ));
         return plans;
     }
